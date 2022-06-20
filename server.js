@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const PORT = 3000;
 const bcrypt = require("bcrypt");
 
 const users = [];
@@ -29,9 +30,11 @@ app.post("/register", async (req, res) => {
       password: hasedPassword,
     });
     res.redirect("/login");
-  } catch {}
-  res.redirect("/register");
+  } catch {
+    res.redirect("/register");
+  }
+
   console.log(users);
 });
 
-app.listen(3000);
+app.listen(PORT, () => console.info(`App Listeing on Port ${PORT}`));

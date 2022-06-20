@@ -1,19 +1,66 @@
 <h1>Login</h1>
 <form action="/register" method="POST">
   <div>
-    <label for="name">name</label>
-    <input type="text" id="name" name="name" required />
+    <input type="text" id="name" placeholder="Username" name="name" required />
   </div>
 
   <div>
-    <label for="email">email</label>
-    <input type="text" id="email" name="email" required />
+    <input type="text" id="email" placeholder="Email" name="email" required />
   </div>
 
   <div>
-    <label for="password">password</label>
-    <input type="password" id="password" name="password" required />
+    <input
+      type="password"
+      id="password"
+      placeholder="Password"
+      name="password"
+      required
+    />
   </div>
-  <button type="submit">Register</button>
+  <button type="submit">Login</button>
 </form>
 <a href="/register">Register</a>
+
+<style type="text/css">
+  body {
+    background-color: #f3ebf6;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    padding: 2rem;
+  }
+  form {
+    padding-top: 40px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  input {
+    max-width: 100%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  button {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #8d7126, #fb7840);
+    border: 0;
+    padding: 10px 40px 10px 40px;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+</style>
